@@ -1,6 +1,8 @@
 import React from "react";
 
 const Home:React.FC = () => {
-  return <></>
+  return <>
+  <div>首页</div>
+  </>
 }
 export default Home

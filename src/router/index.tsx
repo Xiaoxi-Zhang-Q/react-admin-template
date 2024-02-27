@@ -1,7 +1,7 @@
 import { Navigate } from "react-router-dom";
 import Login from "/@/pages/login";
-import Home from "/@/pages/login";
-
+import Home from "/@/pages/home";
+import Layout from "/@/layout";
 const router = [
   {
     path: "/",
@@ -11,6 +11,12 @@ const router = [
     element: <Login />,
   }, {
     path: "/home",
-    element: <Home />,
+    element: <Layout />,
+    children: [
+      {
+        path: "index",
+        element: <Home />,
+      }
+    ]
   }];
 export default router;
