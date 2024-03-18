@@ -1,10 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { getToken } from "/@/utils/session";
-interface UserInfo {
-  username: string;
-  token: string;
-  headPortrait?: string;
-}
+
 const initialState: UserInfo = {
   username: "",
   token: getToken("xxue_token") || "",

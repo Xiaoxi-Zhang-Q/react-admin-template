@@ -2,6 +2,7 @@ import { Navigate } from "react-router-dom";
 import Login from "/@/pages/login";
 import Home from "/@/pages/home";
 import Layout from "/@/layout";
+
 const router = [
   {
     path: "/",

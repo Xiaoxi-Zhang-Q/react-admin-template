@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2020",
+    "baseUrl": "./",
     "useDefineForClassFields": true,
     "lib": [
       "ES2020",
@@ -8,7 +9,6 @@
       "DOM.Iterable"
     ],
     "module": "ESNext",
-    "skipLibCheck": true,
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
@@ -22,9 +22,9 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "paths": {
-      "/@/*": [
-        "./src/*"
-      ]
+      "~/*": ["./*"],
+      "/@/*": ["./src/*"],
+      "/@x/*": ["./library/*"]
     },
     "types": [
      "@types/node"
@@ -34,7 +34,9 @@
     "src",
     "vite.config.ts",
     "types/**/*.d.ts",
-    "types/**/*.ts"
+    "types/**/*.ts",
+    "library/**/*.ts",
+    "vite.config.ts"
   ],
   "references": [
     {

@@ -5,10 +5,10 @@
  * @description：4个子配置，cli配置|通用配置|主题配置|网络配置导出
  * @update: 2024-02-27 09:59
  */
-import { cliConfig } from '/@/config/cli.config'
-import { netConfig } from '/@/config/net.config'
-import { settingConfig } from '/@/config/setting.config'
-import { themeConfig } from '/@/config/theme.config'
+import { cliConfig } from "/@/config/cli.config";
+import { netConfig } from "/@/config/net.config";
+import { settingConfig } from "/@/config/setting.config";
+import { themeConfig } from "/@/config/theme.config";
 
 const config: { [key: string]: any } = {
   ...cliConfig,
