@@ -27,7 +27,7 @@
       "/@x/*": ["./library/*"]
     },
     "types": [
-     "@types/node"
+     "@types/node",
     ]
   },
   "include": [

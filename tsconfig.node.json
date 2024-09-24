@@ -5,11 +5,21 @@
     "module": "ESNext",
     "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true,
+    "jsx": "react-jsx",
     "paths": {
       "~/*": ["./*"],
       "/@/*": ["./src/*"],
       "/@x/*": ["./library/*"]
     }
   },
-  "include": ["vite.config.ts","library"]
+  "include": [
+    "vite.config.ts",
+    "types/**/*.d.ts",
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "types/**/*.ts",
+    "library/**/*.ts",
+    "vite.config.ts"
+  ]
 }

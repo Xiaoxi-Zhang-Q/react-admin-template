@@ -5,3 +5,4 @@
  * @description：var.d
  * @update: 2024-03-18 15:02
  */
+declare module "@vitejs/plugin-react"

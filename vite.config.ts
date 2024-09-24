@@ -1,6 +1,6 @@
 import type { ConfigEnv, UserConfig } from "vite";
 import { defineConfig, loadEnv } from "vite";
-import { createVitePlugin } from "/@x/build";
+import { createVitePlugin, createWatch } from "/@x/build";
 import { resolve } from "path";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
@@ -8,6 +8,7 @@ export default defineConfig(({ mode }: ConfigEnv): UserConfig => {
   process.env["VITE_USER_NODE_ENV"] = mode;
   const root = process.cwd();
   const env = loadEnv(mode, root);
+  createWatch(env);
   return {
     plugins: createVitePlugin(env),
     server: {
